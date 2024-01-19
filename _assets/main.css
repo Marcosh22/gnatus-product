@@ -1,0 +1,205 @@
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    font-family: 'Quicksand', 'Times New Roman', Times, serif;
+    color: #7c8d9b;
+}
+
+.h1 {
+    font-size: 48px;
+    line-height: 1.1em;
+    color: rgb(72, 90, 104);
+    margin-bottom: 10px;
+}
+
+.h1 + p {
+    font-family: "PT Serif";
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-size: 36px;
+    line-height: 1.1em;
+    color: rgb(72, 90, 104);
+    margin-bottom: 15px;
+}
+
+.h3 {
+    font-size: 28px;
+    line-height: 1.1em;
+    color: rgb(72, 90, 104);
+    margin-bottom: 15px;
+}
+
+.form-box {
+    max-width: 330px;
+}
+
+form label {
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #485A68;
+    display: block;
+    margin-bottom: 4px;
+    width: auto;
+    margin-right: 0px;
+}
+
+form input:not([type="submit"]) {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #55BD91;
+    background-color: #fff;
+    color: #485A68;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 3px #dddddd;
+    -webkit-box-shadow: inset 0px 2px 3px #dddddd;
+    -moz-box-shadow: inset 0px 2px 3px #dddddd;
+    height: 49px;
+    font-size: 15px;
+    line-height: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cta {
+    display: flex;
+    border-style: none;
+    border-radius: 10px;
+    height: 59px;
+    background: rgba(85,189,145,1);
+    box-shadow: none;
+    text-shadow: none;
+    color: #ffffff;
+    border-width: 0;
+    border-color: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: Quicksand;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-decoration: none!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button-wrapper::before {
+    content: '';
+    display: block;
+    border-style: none;
+    border-radius: 10px;
+    height: 59px;
+    background: rgba(61,145,109,1);
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    z-index: 1;
+}
+
+.cta:hover {
+    background: rgba(65,180,126,1);
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.light-green-section {
+    padding-top: 210px;
+    background: rgba(246,251,249,1);
+    margin-top: -180px;
+}
+
+.bonus-section {
+    padding: 80px;
+    background: rgba(246,251,249,1);
+}
+
+
+.main-image {
+   position: relative;
+   z-index: 1;
+}
+
+.main-image img {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-image::before {
+    content: '';
+    display: block;
+    border-style: none;
+    border-radius: 20px;
+    background: rgba(61,145,109,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(5px, 5px);
+    z-index: -1;
+}
+
+.benefits-list {
+    margin: 40px 0;
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    text-align: left;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.benefits-list li i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgba(85,189,145,1);
+}
+
+.benefits-list li strong {
+    color: rgba(85,189,145,1);
+}
+
+@media (max-width: 991.98px) {
+    .h1 {
+        font-size: 38px;
+    }
+
+    .h2 {
+        font-size: 30px;
+    }
+
+    .h3 {
+        font-size: 26px;
+    }
+
+    .form-box {
+        max-width: 100%;
+    }
+}
+
+#button-whats a svg {
+    width: 100%;
+    height: auto;
+}
